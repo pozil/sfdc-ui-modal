@@ -1,0 +1,36 @@
+<aura:documentation>
+	<aura:description>
+		<p>A <code>ui_modal:modal</code> component that displays a fully customizable modal dialog.</p>
+		<p>It features all of the options of the original <a href="https://www.lightningdesignsystem.com/components/modals/">SLDS modal</a>.</p>
+		<p>The modal is hidden by default. It can be shown with the <code>openModal</code> method.</p>
+
+		<h4>Methods</h4>
+
+		<h5>openModal()</h5>
+		<p>This method shows the modal dialog.</p>
+
+		<h5>closeModal()</h5>
+		<p>This method hides the modal dialog. This is used by the buttons that can close the modal.</p>
+
+		<h5>openModalAlert(title, message)</h5>
+		<p>This shorthand method allows to dynamically create a simple alert modal with a title, a text message and an 'Ok' button.</p>
+		<p><b>Attributes</b></p>
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Type</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td><code>title</code></td>
+				<td>String</td>
+				<td>The title of the modal.</td>
+			</tr>
+			<tr>
+				<td><code>message</code></td>
+				<td>String</td>
+				<td>The message of the modal.</td>
+			</tr>
+		</table>
+	</aura:description>
+</aura:documentation>

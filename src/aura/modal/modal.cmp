@@ -1,0 +1,48 @@
+<aura:component access="global">
+	<aura:attribute access="global" name="title" type="String" description="The optional title of the modal. If it is empty, the header block is not displayed." />
+	<aura:attribute access="global" name="tagline" type="Aura.Component[]" description="The optional tagline of the modal. It is displayed under the title in the header block." />
+	<aura:attribute access="global" name="footer" type="Aura.Component[]" description="The optional footer of the modal. If is is empty, the footer block is not displayed." />
+	<aura:attribute access="global" name="hasCloseIcon" type="Boolean" default="true" description="Whether the modal can be closed with a top right 'x' icon. True by default." />
+	<aura:attribute access="global" name="isLarge" type="Boolean" default="false" description="Makes the modal extra wide ('large modal' in SLDS). False by default." />
+	<aura:attribute access="global" name="isDirectional" type="Boolean" default="false" description="Makes the modal footer buttons directional (one button aligned on the left and one on the right for example). False by default." />
+
+	<aura:method access="global" name="openModalAlert" action="{!c.openModalAlert}" description="Shortcut method that opens a modal alert">
+		<aura:attribute name="title" type="String" description="The title of the modal. If title is empty, the header is not displayed." />
+		<aura:attribute name="message" type="String" description="The message of the modal." />
+	</aura:method>
+	
+	<aura:method access="global" name="openModal" action="{!c.openModal}" description="Opens the modal"/>
+	<aura:method access="global" name="closeModal" action="{!c.closeModal}" description="Closes the modal"/>
+
+	<div aura:id="modalContainer" class="slds-hide">
+		<div role="dialog" tabindex="-1" aria-labelledby="modalTitle" class="{! 'slds-modal slds-fade-in-open ' + (v.isLarge ? 'slds-modal--large':'') }">
+			<div class="slds-modal__container">
+			
+				<!-- Header -->
+				<div class="{! 'slds-modal__header ' + (empty(v.title) ? 'slds-modal__header--empty' : '')}">
+					<aura:if isTrue="{!v.hasCloseIcon}">
+						<lightning:buttonIcon onclick="{!c.closeModal}" iconName="utility:close" alternativeText="Close" class="slds-modal__close" variant="bare-inverse" size="large"/>
+					</aura:if>
+					<h2 class="slds-text-heading--medium" id="modalTitle">{!v.title}</h2>
+					<aura:if isTrue="{!!empty(v.tagline)}">
+						<p class="slds-m-top--x-small">{!v.tagline}</p>
+					</aura:if>
+				</div>
+				
+				<!-- Body -->
+				<div class="slds-modal__content slds-p-around--medium">
+					{!v.body}
+				</div>
+
+				<!-- Footer -->
+				<aura:if isTrue="{!!empty(v.footer)}">
+					<div class="{! 'slds-modal__footer ' + (v.isDirectional ? 'slds-modal__footer--directional' : '')}">
+						{!v.footer}
+					</div>
+				</aura:if>
+			</div>
+		</div>
+		<div class="slds-backdrop slds-backdrop--open"></div>
+	</div>
+
+</aura:component>
