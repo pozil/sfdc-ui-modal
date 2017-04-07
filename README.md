@@ -29,14 +29,4 @@ You can access it from this URL (replace the domain):
 https://<b>&lt;YOUR_DOMAIN&gt;</b>.lightning.force.com/auradocs/reference.app#reference?descriptor=ui_modal:modal&defType=component
 
 ## Sample application
-Paste the following code in a new Lightning Application to try it out:
-
-``` xml
-<aura:application extends="force:slds">
-	<div style="text-align:center; margin-top:300px;">...</div>
-</aura:application>
-```
-
-It will render like this:
-
-<img src="screenshots/basic-example.png" width="75%"/>
+Check out the [sample application](https://github.com/pozil/sfdc-ui-modal-sample).
