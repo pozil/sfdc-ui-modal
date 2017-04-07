@@ -1,6 +1,6 @@
 # Salesforce Lightning Modal Component
 
-<img src="screenshots/annotated-features.png" width="300" align="right"/>
+<img src="screenshots/annotated-features.png" width="350" align="right"/>
 
 ## About
 This is a generic & customizable modal dialog component built using Salesforce Lightning and [SLDS](https://www.lightningdesignsystem.com/) style.
