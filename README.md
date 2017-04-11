@@ -19,7 +19,7 @@ The Lightning Modal component provides the following features:
 ## Install
 Install the Lightning Modal component as a managed package by clicking on this button:
 
-<a href="https://login.salesforce.com/packaging/installPackage.apexp?p0=04t0Y000000xSc3">
+<a href="https://login.salesforce.com/packaging/installPackage.apexp?p0=04t0Y000001Umzh">
   <img src="gfx/btn-install.png" width="100" alt="Install">
 </a>
 
