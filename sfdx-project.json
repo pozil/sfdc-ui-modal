@@ -1,0 +1,11 @@
+{
+  "packageDirectories": [
+    {
+      "path": "src",
+      "default": true
+    }
+  ],
+  "namespace": "ui_modal",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "40.0"
+}
