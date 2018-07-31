@@ -2,6 +2,11 @@
 
 <img src="screenshots/annotated-features.png" width="350" align="right"/>
 
+**WARNING:** this component is deprectated.<br/>
+It is replaced by the following base components:
+- [lightning:notificationsLibrary](https://developer.salesforce.com/docs/component-library/bundle/lightning:notificationsLibrary/documentation) for simple text notices.
+- [lightning:overlayLibrary](https://developer.salesforce.com/docs/component-library/bundle/lightning:overlayLibrary/documentation) for fully customizable modal dialogs
+
 ## About
 This is a generic & customizable modal dialog component built using Salesforce Lightning and [SLDS](https://www.lightningdesignsystem.com/) style.
 It does not rely on third party libraries.
