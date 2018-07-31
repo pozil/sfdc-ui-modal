@@ -1,4 +1,4 @@
-# Salesforce Lightning Modal Component
+# Salesforce Lightning Modal Component (Deprecated)
 
 <img src="screenshots/annotated-features.png" width="350" align="right"/>
 
